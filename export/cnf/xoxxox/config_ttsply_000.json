@@ -1,0 +1,9 @@
+{
+  "output": "random",
+  "strext": ".wav",
+  "dicdir": {
+    "0": "/opt/common/web/xoxxox/vce/vce000",
+    "1": "/opt/common/web/xoxxox/vce/vce001",
+    "2": "/opt/common/web/xoxxox/vce/vce002"
+  }
+}

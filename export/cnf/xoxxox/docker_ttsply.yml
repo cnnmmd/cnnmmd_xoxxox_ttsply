@@ -1,0 +1,16 @@
+networks:
+  default:
+    name: xoxxox_netmid
+    external: true
+services:
+  xoxxox_ttsply:
+    image: xoxxox_envweb:001
+    container_name: xoxxox_ttsply
+    volumes:
+    - ../../../export:/opt/common
+    - ../../../strage:/opt/strage
+    env_file:
+    - ./envdir.txt
+    ports:
+    - 10201:80
+    command: "python /opt/common/bin/xoxxox/srvtts.py --engine xoxxox/engine_ttsply"
